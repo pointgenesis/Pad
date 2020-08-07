@@ -13,6 +13,11 @@ References:
 import sys
 from builtins import int, isinstance
 
+def is_none_or_empty(string):
+    """
+
+    """
+
 def is_valid_input(source_string, padding_character, output_length):
     '''
     Method used to provide basic validation on input parameters. It checks for None aka null values,

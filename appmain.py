@@ -5,6 +5,7 @@ Created on Aug 29, 2019
 '''
 from pad import left
 
+
 class AppMain:
     '''
     Additional test class put in place while working on the gherkin/behave test suite.
