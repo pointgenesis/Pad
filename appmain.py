@@ -24,20 +24,23 @@ logging.basicConfig(
 
 log = logging.getLogger(__name__)
 
+
 class AppMain:
-    '''
+
+    """
     Additional test class put in place while working on the gherkin/behave test suite.
-    '''
+    """
     def __init__(self):
-        print('initializing AppMain')
-        
+        log.debug('initializing AppMain')
+
     def test_left_padded_input(self):        
-        print('100 as a left-padded fixed-length string: ' + Pad.left('100', '0', 10))
+        log.debug('100 as a left-padded fixed-length string: %s', Pad.left('100', '0', 10))
+        log.debug('Courtesy amount ($1,021.65) as a left-padded fixed-length string: %s', Pad.left('$1,021.65', ' ', 16))
 
     def test_right_padded_input(self):
-        print('Courtesy amount ($1,021.65) as a left-padded fixed-length string: ' + Pad.right(
-            '$1,021.65', ' ', 16))
-        print('Legal amount ($1,021.65) as a left-padded fixed-length string: ' + Pad.right('One thousand twenty-one dollars and 65 cents', '*', 48))
+
+        log.debug('Legal amount ($1,021.65) as a right-padded fixed-length string: %s',
+                  Pad.right('One thousand twenty-one dollars and 65 cents', '*', 64))
         
 if __name__ == '__main__':
     appMain = AppMain()
