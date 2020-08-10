@@ -11,7 +11,6 @@ layout = '%(asctime)-10s | ' \
          '%(levelname)-8s | ' \
          '%(lineno)4s | ' \
          '%(filename)24s | ' \
-         '%(processName)24s | ' \
          '%(funcName)24s | ' \
          '%(message)s'
 
